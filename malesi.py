@@ -47,7 +47,7 @@ def main(filename):
         for x in range(len(text)):
             while True:
                 for cycle in range(0,5):
-                    for rand in range(0,3):
+                    for rand in range(0,5):
                         rand_num = str(ord(text[x])) + str(random.randint(0,5))
                 temp = img_alpha[rand_num]
                 if os.path.isfile(temp):
