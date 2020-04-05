@@ -46,8 +46,9 @@ def main(filename):
         img_readline.append(cv2.imread( img_alpha['32' + str(2)] ))
         for x in range(len(text)):
             while True:
-                for rand in range(0,3):
-                    rand_num = str(ord(text[x])) + str(random.randint(0,5))
+                for cycle in range(0,5):
+                    for rand in range(0,3):
+                        rand_num = str(ord(text[x])) + str(random.randint(0,5))
                 temp = img_alpha[rand_num]
                 if os.path.isfile(temp):
                     img_readline.append( cv2.imread(temp) )
